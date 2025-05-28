@@ -17,14 +17,14 @@ source:
   fn: diatracer_source.zip
 
 build:
-  noarch: generic
+  skip: True # [not linux64]
   number: 0
   run_exports:
     - {{ pin_subpackage(name|lower, max_pin="x") }}
 
 requirements:
   host:
-    - python >=3.9
+    - python =3.11
     - unzip
   run:
     - openjdk >=11
