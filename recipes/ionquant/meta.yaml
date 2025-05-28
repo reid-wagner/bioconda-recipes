@@ -24,11 +24,11 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python =3.11
     - unzip
   run:
     - openjdk >=11
-    - python >=3.9
+    - python =3.11
 
 test:
   commands:
